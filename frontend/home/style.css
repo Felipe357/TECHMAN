@@ -60,7 +60,7 @@ main {
     width: 100vw;
     height: 88vh;
     background-color: #EEEDEB;
-    gap: 100px;
+    gap: 50px;
     overflow-y: scroll;
 }
 
@@ -68,8 +68,9 @@ main {
     display: flex;
     flex-direction: row;
     width: 70vw;
-    height: 30vh;
+    height: 35vh;
     border-bottom: 2px solid #35797d;
+    padding-bottom: 50px;
 }
 
 .productPic {
@@ -113,4 +114,94 @@ main {
 .botoezes>button {
     background: none;
     border: none;
+}
+
+.delComent-modal,
+.comentar-modal,
+.comentarios-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #eeedeb5e;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    width: 35vw;
+    height: 30vh;
+    border: 1px solid #000000;
+    background-color: #FFFFFF;
+    padding: 15px 20px;
+}
+
+#confirmaDelete {
+    height: 40px;
+    width: 170px;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: #FFFFFF;
+    background-color: red;
+}
+
+#sendComentario, #addComent {
+    height: 40px;
+    width: 170px;
+    border-radius: 10px;
+    border: none;
+    color: #FFFFFF;
+    background-color: #35797d;
+}
+
+.close {
+    font-size: 26px;
+    color: #35797d;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#textArea {
+    width: 98%;
+    height: 40px;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    border-bottom: 1px solid #35797d;
+}
+
+.comentarios{
+    flex: 1;
+    font-style: italic;
+    color: #7c7c7c;
+    font-size: 14pt;
+    margin: 20px 0;
+}
+
+.mod-comentario{
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px #35797d dotted;
+    height: fit-content;
+}
+
+.comentop{
+    font-weight: bold;
+    font-size: 16pt;
+    margin-bottom: 10px;
+}
+
+.comentarios-modal > .container{
+    width: 900px;
+    height: min-content;
 }
