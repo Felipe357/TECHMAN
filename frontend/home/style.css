@@ -122,7 +122,8 @@ main {
 .comentarios-modal,
 .ms-ok,
 .ms-ko,
-.ms-fetch {
+.ms-fetch,
+.equipamentos-modal {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -142,7 +143,7 @@ main {
     position: relative;
     width: 35vw;
     height: 30vh;
-    border: 1px solid #000000;
+    border: 1px solid #646464;
     background-color: #FFFFFF;
     padding: 15px 20px;
 }
@@ -157,7 +158,8 @@ main {
 }
 
 #sendComentario,
-#addComent {
+#addComent,
+#addEqui {
     height: 40px;
     width: 170px;
     border-radius: 10px;
@@ -241,4 +243,31 @@ main {
     border: none;
     color: #7c7c7c;
     width: 50%;
+}
+
+.equipamentos-modal>.container {
+    height: 50vh!important;
+    width: 55vw!important;
+}
+
+#nomeEquipamentoCad, #endImage {
+    height: 40px;
+    padding: 0px 0px 0px 10px;
+    border: none;
+    border-bottom: 2px solid #7c7c7c;
+    font-size: 12pt;
+    outline: none;
+}
+
+#textEquipamento {
+    border: none;
+    border-bottom: 2px solid #7c7c7c;
+    padding: 0px 0px 0px 10px;
+    font-size: 12pt;
+    height: 100px;
+    outline: none;
+}
+
+#checkeq {
+    background-color: #000;
 }
