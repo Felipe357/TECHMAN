@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TECHMAN - Login</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        localStorage.clear();
+    </script>
 </head>
 
 <body>
@@ -15,6 +18,9 @@
             <img class="techman" src="../assets/techman.png"/>
         </div>
         <div class="senha-container">
+            <div class="alert model">
+                <span>ERRO: Senha incorreta.</span>
+            </div>
             <div class="senha-display">
                 <span type="password" class="senha"></span>
             </div>
@@ -30,7 +36,7 @@
                 <button class="numero" id="9" onclick="addSenha(this)">9</button>
                 <button class="numero" onclick="limparCalc()">C</button>
                 <button class="numero">0</button>
-                <button class="delete" onclick="login()"><img class="fota" src="../assets/enter.png" /></button>
+                <button class="delete" onclick="login()" disabled="true"><img class="fota" src="../assets/enter.png" /></button>
             </div>
         </div>
     </main>

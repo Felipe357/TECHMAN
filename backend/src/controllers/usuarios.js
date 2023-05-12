@@ -18,13 +18,17 @@ const login = async (req, res) => {
     const usuarios = await prisma.Usuarios.findMany({
         where: {
             senha: req.body.senha
+        },
+        select: {
+            id: true,
+            id_perfil: true
         }
     })
 
     if (usuarios.length === 0) {
         res.status(200).json(false).end()
     } else { 
-        res.status(200).json(usuarios[0].id_perfil).end() 
+        res.status(200).json(usuarios).end() 
     }
 
 

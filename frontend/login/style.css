@@ -1,9 +1,10 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,500&display=swap');
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
 }
 
 main {
@@ -30,6 +31,7 @@ main {
   width: 25%;
   height: 50%;
   box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.13);
+  position: relative;
 }
 
 .senha-display {
@@ -93,4 +95,24 @@ main {
 .delete:hover {
   background-color: #44babc;
   color: #ffffff;
+}
+
+.alert {
+  position: absolute;
+  top: 20px;
+  height: 50px;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  border: 2px solid red;
+  color: #000;
+  letter-spacing: 2px;
+  background-color: rgba(255, 0, 0, 0.26);
+}
+
+.model {
+  display: none;
+  visibility: hidden;
 }
